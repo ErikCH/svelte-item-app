@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "flog",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authflog1cd6b740",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
